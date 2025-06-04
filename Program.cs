@@ -16,7 +16,10 @@ namespace MiniCRMApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            DevExpress.Skins.SkinManager.EnableFormSkins();
+            DevExpress.LookAndFeel.UserLookAndFeel.Default.SetSkinStyle("Office 2019 Colorful"); // Можно выбрать любую тему
+
+            Application.Run(new CustomersForm());
         }
     }
 }

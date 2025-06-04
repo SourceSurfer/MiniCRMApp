@@ -10,7 +10,7 @@ namespace MiniCRMApp.Data
     internal class MiniCRMContext : DbContext
     {
         // Constructor using connection string name from config
-        public MiniCRMContext() : base("name=MiniCRMConnection")
+        public MiniCRMContext() : base("name=MiniCRMConnectionString")
         {
         }
 
