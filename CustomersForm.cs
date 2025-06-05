@@ -20,6 +20,7 @@ namespace MiniCRMApp
         {
             InitializeComponent();
             _context = new MiniCRMContext();
+            
         }
 
         private void CustomersForm_Load(object sender, EventArgs e)
@@ -30,6 +31,7 @@ namespace MiniCRMApp
         private void LoadCustomers()
         {
             gridControl1.DataSource = _context.Customers.ToList();
+            gridView1.Columns["Orders"].Visible = false;
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
